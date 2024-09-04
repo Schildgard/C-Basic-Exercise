@@ -4,7 +4,6 @@
 #include "main.h"
 
 int main() {
-
 	int size = GetArraySize();
 	int* unsortArray = (int*)malloc(size * sizeof(int));
 	if (unsortArray == NULL) {
@@ -20,12 +19,8 @@ int main() {
 	BubbleSort(unsortArray, size);
 	PrintArray(unsortArray, size);
 
-
-
 	free(unsortArray);
-
 	return 0;
-
 }
 
 void PrintArray(int _arr[], int _size) {
@@ -40,30 +35,22 @@ void PrintArray(int _arr[], int _size) {
 
 void GetIntegerArray(int _size, int* _arr) {
 
-
 	//Set memory space for user Input
-	char buffer[1000]; //1KB
+	char input[1000]; //1KB
 
 	printf("Now, please insert %i numbers for the array, each divided by space\n", _size);
 
 	//Get User Input as Array of chars
-	while (fgets(buffer, sizeof(buffer), stdin) == NULL) {
+	while (fgets(input, sizeof(input), stdin) == NULL) {
 		printf("Invalid Input\n");
 		while (getchar() != '\n');
 
 	}
 
-
-	//translate the Input to int Array
-	char* token = strtok(buffer, " ");
-	int index = 0;
-	while (token != NULL && index < _size) {
-		_arr[index] = atoi(token); //atoi converts a string to integer
-		token = strtok(NULL, " ");
-		index++;
-	}
+	TranslateStringToInt(input, _size, _arr);
 
 }
+
 int GetArraySize() {
 	int size;
 	printf("Please enter a size for the integer Array: ");
@@ -79,6 +66,18 @@ int GetArraySize() {
 	printf("Your array will consist of %i units\n", size);
 	return size;
 }
+
+void TranslateStringToInt(char _inputArr[], int _size, int* _arr) {
+	char* readSection = strtok(_inputArr, " ");  //strok reads the content of input until it finds space
+	int arrayIndex = 0;
+
+	while (readSection != NULL && arrayIndex < _size) {
+		_arr[arrayIndex] = atoi(readSection); //atoi converts a stringfield to integer
+		readSection = strtok(NULL, " "); //strok memorizes its last iteration and automatically jumps to next section
+		arrayIndex++;
+	}
+}
+
 void BubbleSort(int _arr[], int _size) {
 
 	int swapped = 0;
