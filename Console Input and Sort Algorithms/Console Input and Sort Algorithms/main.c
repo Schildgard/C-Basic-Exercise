@@ -39,8 +39,6 @@ void PrintArray(int _arr[], int _size) {
 }
 
 void GetIntegerArray(int _size, int* _arr) {
-
-
 	//Set memory space for user Input
 	char buffer[1000]; //1KB
 
@@ -49,8 +47,7 @@ void GetIntegerArray(int _size, int* _arr) {
 	//Get User Input as Array of chars
 	while (fgets(buffer, sizeof(buffer), stdin) == NULL) {
 		printf("Invalid Input\n");
-		while (getchar() != '\n');
-
+		while (getchar() != '\n'); // Clears Input buffer
 	}
 
 

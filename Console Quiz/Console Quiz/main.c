@@ -12,8 +12,16 @@ int main() {
 	char* userName = GetUserName();
 	int chosenNumber;
 	printf("Your Username is %s", userName);
-	chosenNumber = ChooseOption();
+
+
+	char* optionA = "Radagon";
+	char* optionB = "Marika";
+	char* optionC = "Maliketh";
+
+	chosenNumber = ChooseOption(optionA, optionB, optionC);
+	//chosenNumber = ChooseOptionTEST();
 	printf("You chose option %i", chosenNumber);
+
 
 	return 0;
 }
@@ -27,7 +35,7 @@ char* GetUserName() {
 	return input;
 }
 
-int ChooseOption() {
+int ChooseOptionTEST() {
 	int currentOption = 1;
 	int select;
 
@@ -51,7 +59,66 @@ int ChooseOption() {
 				if (currentOption < 3) currentOption++;
 				break;
 			}
-		}
-		else if (select = ENTER_KEY) { return currentOption; }
+		} else if (select = ENTER_KEY) { return currentOption;}
 	}
 }
+
+
+int ChooseOption(char _str1[], char _str2[], char _str3[]) {
+
+		//printf(currentOption == 1 ? ">   %s \n", _str1 :"%s\n", _str1);
+		////printf("\n");
+		//printf(currentOption == 2 ? (">   %sz\n", _str2) : (_str2));
+		//printf(currentOption == 3 ? (">   %sz\n", _str3) :(_str3));
+
+		//for (int i = 0; i < 3; i++)
+		//{
+		//	if (currentOption == i) {
+		//		printf(">  %sz\n", );
+		//	}
+		//}
+
+	int currentOption = 1;
+	int select;
+
+	while (1)
+	{
+		printf("\033[H\33[J");
+
+		if (currentOption == 1) {
+
+			printf(">    %s\n", _str1);
+		}
+		else printf("%s \n", _str1);
+
+		if (currentOption == 2) {
+
+			printf(">    %s\n", _str2);
+		}
+		else printf("%s \n", _str2);
+
+		if (currentOption == 3) {
+
+			printf(">    %s\n", _str3);
+		}
+		else printf("%s \n", _str3);
+
+
+		select = _getch();
+
+		if (select == 224) {
+			select = _getch();
+			switch (select) {
+			case UP_ARROW:
+				//currentOption > 1 ? -1 : 3; //Ternary Operator: is current option bigger than 1 ? If yes, decrease, if no: go to end
+				if (currentOption > 1) currentOption--;
+				break;
+			case DOWN_ARROW:
+				//currentOption < 3 ? +1 : 1; //Ternary Operator: is current option smaller than 3 ? If yes, increase, if no: go to start
+				if (currentOption < 3) currentOption++;
+				break;
+			}
+		} else if (select = ENTER_KEY) { return currentOption; }
+	}
+}
+
