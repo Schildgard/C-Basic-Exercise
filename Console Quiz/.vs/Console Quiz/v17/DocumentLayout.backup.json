@@ -31,8 +31,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-04T14:30:24.099Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -42,7 +41,7 @@
               "RelativeDocumentMoniker": "Console Quiz\\main.c",
               "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Projects-in-C\\Console Quiz\\Console Quiz\\main.c",
               "RelativeToolTip": "Console Quiz\\main.c",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAAFwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAAFwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-09-04T14:29:29.713Z",
               "EditorCaption": ""
