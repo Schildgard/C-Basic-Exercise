@@ -34,7 +34,10 @@ void PrintArray(int _arr[], int _size) {
 }
 
 void GetIntegerArray(int _size, int* _arr) {
+<<<<<<< HEAD
 
+=======
+>>>>>>> work
 	//Set memory space for user Input
 	char input[1000]; //1KB
 
@@ -43,8 +46,7 @@ void GetIntegerArray(int _size, int* _arr) {
 	//Get User Input as Array of chars
 	while (fgets(input, sizeof(input), stdin) == NULL) {
 		printf("Invalid Input\n");
-		while (getchar() != '\n');
-
+		while (getchar() != '\n'); // Clears Input buffer
 	}
 
 	TranslateStringToInt(input, _size, _arr);
