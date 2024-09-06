@@ -34,10 +34,7 @@ void PrintArray(int _arr[], int _size) {
 }
 
 void GetIntegerArray(int _size, int* _arr) {
-<<<<<<< HEAD
 
-=======
->>>>>>> work
 	//Set memory space for user Input
 	char input[1000]; //1KB
 
