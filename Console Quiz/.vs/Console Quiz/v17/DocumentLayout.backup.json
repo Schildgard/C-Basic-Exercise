@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Student\\Documents\\GitHub\\Projects-in-C\\Console Quiz\\",
+  "WorkspaceRootPath": "D:\\Repository\\Projects-in-C\\Console Quiz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F1982BA7-A402-4614-945A-652F33A75679}|Console Quiz\\Console Quiz.vcxproj|C:\\Users\\Student\\Documents\\GitHub\\Projects-in-C\\Console Quiz\\Console Quiz\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F1982BA7-A402-4614-945A-652F33A75679}|Console Quiz\\Console Quiz.vcxproj|D:\\Repository\\Projects-in-C\\Console Quiz\\Console Quiz\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F1982BA7-A402-4614-945A-652F33A75679}|Console Quiz\\Console Quiz.vcxproj|solutionrelative:Console Quiz\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1982BA7-A402-4614-945A-652F33A75679}|Console Quiz\\Console Quiz.vcxproj|C:\\Users\\Student\\Documents\\GitHub\\Projects-in-C\\Console Quiz\\Console Quiz\\main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{F1982BA7-A402-4614-945A-652F33A75679}|Console Quiz\\Console Quiz.vcxproj|D:\\Repository\\Projects-in-C\\Console Quiz\\Console Quiz\\main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F1982BA7-A402-4614-945A-652F33A75679}|Console Quiz\\Console Quiz.vcxproj|solutionrelative:Console Quiz\\main.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -18,30 +18,39 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "main.h",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Projects-in-C\\Console Quiz\\Console Quiz\\main.h",
+              "DocumentMoniker": "D:\\Repository\\Projects-in-C\\Console Quiz\\Console Quiz\\main.h",
               "RelativeDocumentMoniker": "Console Quiz\\main.h",
-              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Projects-in-C\\Console Quiz\\Console Quiz\\main.h",
+              "ToolTip": "D:\\Repository\\Projects-in-C\\Console Quiz\\Console Quiz\\main.h",
               "RelativeToolTip": "Console Quiz\\main.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-04T14:30:24.099Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.c",
-              "DocumentMoniker": "C:\\Users\\Student\\Documents\\GitHub\\Projects-in-C\\Console Quiz\\Console Quiz\\main.c",
+              "DocumentMoniker": "D:\\Repository\\Projects-in-C\\Console Quiz\\Console Quiz\\main.c",
               "RelativeDocumentMoniker": "Console Quiz\\main.c",
-              "ToolTip": "C:\\Users\\Student\\Documents\\GitHub\\Projects-in-C\\Console Quiz\\Console Quiz\\main.c",
+              "ToolTip": "D:\\Repository\\Projects-in-C\\Console Quiz\\Console Quiz\\main.c",
               "RelativeToolTip": "Console Quiz\\main.c",
-              "ViewState": "AgIAACIAAAAAAAAAAAAAAFwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAwFcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-09-04T14:29:29.713Z",
               "EditorCaption": ""

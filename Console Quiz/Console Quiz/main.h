@@ -2,4 +2,11 @@
 
 
 char* GetUserName();
-int ChooseOption(char _str1[], char _str2[], char _str3[], char _question[]);
+typedef struct Riddle {
+	char* optionA;
+	char* optionB;
+	char* optionC;
+	char* question;
+	int truth;
+}Riddle;
+int AskRiddle(Riddle _riddle, int _score);
