@@ -1,6 +1,5 @@
 ﻿  main.c
-D:\Repository\Projects-in-C\Console Quiz\Console Quiz\main.c(13,7): warning C4047: "Initialisierung": Anzahl der Dereferenzierungen bei "int *" und "int" unterschiedlich
-D:\Repository\Projects-in-C\Console Quiz\Console Quiz\main.c(42,8): warning C4133: "Funktion": Inkompatible Typen - von "int [1000]" zu "char *"
-D:\Repository\Projects-in-C\Console Quiz\Console Quiz\main.c(44,2): warning C4133: "return": Inkompatible Typen - von "int [1000]" zu "char *"
-D:\Repository\Projects-in-C\Console Quiz\Console Quiz\main.c(44,1): warning C4172: Adresse einer lokalen Variablen oder eines temporären Werts ": input" wird zurückgegeben
+D:\Repository\Projects-in-C\Console Quiz\Console Quiz\main.c(37,8): warning C4133: "Funktion": Inkompatible Typen - von "int [1000]" zu "char *"
+D:\Repository\Projects-in-C\Console Quiz\Console Quiz\main.c(39,2): warning C4133: "return": Inkompatible Typen - von "int [1000]" zu "char *"
+D:\Repository\Projects-in-C\Console Quiz\Console Quiz\main.c(39,1): warning C4172: Adresse einer lokalen Variablen oder eines temporären Werts ": input" wird zurückgegeben
   Console Quiz.vcxproj -> D:\Repository\Projects-in-C\Console Quiz\x64\Debug\Console Quiz.exe

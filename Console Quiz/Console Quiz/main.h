@@ -9,4 +9,6 @@ typedef struct Riddle {
 	char* question;
 	int truth;
 }Riddle;
-int AskRiddle(Riddle _riddle, int _score);
+int AskRiddle(Riddle _riddle, int* _score);
+
+void IterateThroughRiddles(Riddle _riddle[], int* _score);
