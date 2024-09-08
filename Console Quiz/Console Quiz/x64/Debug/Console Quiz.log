@@ -1,8 +1,5 @@
 ﻿  main.c
-C:\Users\Student\Documents\GitHub\Projects-in-C\Console Quiz\Console Quiz\main.c(35,8): warning C4133: "Funktion": Inkompatible Typen - von "int [1000]" zu "char *"
-C:\Users\Student\Documents\GitHub\Projects-in-C\Console Quiz\Console Quiz\main.c(37,2): warning C4133: "return": Inkompatible Typen - von "int [1000]" zu "char *"
-C:\Users\Student\Documents\GitHub\Projects-in-C\Console Quiz\Console Quiz\main.c(45,19): warning C4267: "Initialisierung": Konvertierung von "size_t" nach "int", Datenverlust möglich
-C:\Users\Student\Documents\GitHub\Projects-in-C\Console Quiz\Console Quiz\main.c(46,19): warning C4267: "Initialisierung": Konvertierung von "size_t" nach "int", Datenverlust möglich
-C:\Users\Student\Documents\GitHub\Projects-in-C\Console Quiz\Console Quiz\main.c(47,19): warning C4267: "Initialisierung": Konvertierung von "size_t" nach "int", Datenverlust möglich
-C:\Users\Student\Documents\GitHub\Projects-in-C\Console Quiz\Console Quiz\main.c(37,1): warning C4172: Adresse einer lokalen Variablen oder eines temporären Werts ": input" wird zurückgegeben
-  Console Quiz.vcxproj -> C:\Users\Student\Documents\GitHub\Projects-in-C\Console Quiz\x64\Debug\Console Quiz.exe
+D:\Repository\Projects-in-C\Console Quiz\Console Quiz\main.c(37,8): warning C4133: "Funktion": Inkompatible Typen - von "int [1000]" zu "char *"
+D:\Repository\Projects-in-C\Console Quiz\Console Quiz\main.c(39,2): warning C4133: "return": Inkompatible Typen - von "int [1000]" zu "char *"
+D:\Repository\Projects-in-C\Console Quiz\Console Quiz\main.c(39,1): warning C4172: Adresse einer lokalen Variablen oder eines temporären Werts ": input" wird zurückgegeben
+  Console Quiz.vcxproj -> D:\Repository\Projects-in-C\Console Quiz\x64\Debug\Console Quiz.exe

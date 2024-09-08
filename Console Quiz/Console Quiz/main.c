@@ -9,23 +9,27 @@
 #define ENTER_KEY 13
 
 int main() {
+	int userScore = 0;
+	int* scorePointer = &userScore;
 
 	// Ask User Name
 	char* userName = GetUserName();
-	int chosenNumber;
 	printf("Your Username is %s", userName);
 
-	// Declare Options
-	char* optionA = "Radagon";
-	char* optionB = "Marika";
-	char* optionC = "Maliketh";
-	char* question1 = "Who was a Champion of the Golden Order?";
+	// Declare and Define Questions
+	Riddle task1 = { "Radagon", "Marika","Maliketh", "Who was a Champion of the Golden Order?", 1 };
+	Riddle task2 = { "Godefroy", "Godrick", "Godfrey", "By what name goes the first Elden Lord?", 3 };
+	Riddle task3 = { "The Three Fingers", "Empyreans", "The Two Fingers", "Which entitites are messengers of the Greater Will?", 3 };
 
-	// Let User choose Option
-	chosenNumber = ChooseOption(optionA, optionB, optionC, question1);
-	printf("You chose option %i", chosenNumber);
+	//Summarize Questions in Array and Ask Questions.
+	Riddle taskArr[] = { task1,task2,task3 };
+	IterateThroughRiddles(taskArr, scorePointer);
 
-	return 0;
+	//Clear Console and Print Highscore
+	printf("\033[H\33[J");
+	printf("Your Highscore is %i", userScore);
+
+	return 1;
 }
 
 char* GetUserName() {
@@ -37,22 +41,14 @@ char* GetUserName() {
 	return input;
 }
 
-
-
-int ChooseOption(char _str1[], char _str2[], char _str3[], char _question[]) {
-
-	//First memorize size of strings
-	int sizeOfStr1 = strlen(_str1);
-	int sizeOfStr2 = strlen(_str2);
-	int sizeOfStr3 = strlen(_str3);
-
+int AskRiddle(Riddle _riddle, int* _score) {
 	//Allocate Memory for an array that stores pointer to the strings
 	char** strArr = (char**)malloc(3 * sizeof(char*));
 
 	//declar content of string Array
-	strArr[0] = _str1;
-	strArr[1] = _str2;
-	strArr[2] = _str3;
+	strArr[0] = _riddle.optionA;
+	strArr[1] = _riddle.optionB;
+	strArr[2] = _riddle.optionC;
 
 	// Let user select between indices
 	int currentOption = 0;
@@ -61,7 +57,7 @@ int ChooseOption(char _str1[], char _str2[], char _str3[], char _question[]) {
 	while (1)
 	{
 		printf("\033[H\33[J"); //Clear Console
-		printf("%s\n", _question);
+		printf("%s\n", _riddle.question);
 		//iterate through string Array and print the avaiable options, highlighting the selected one
 		for (int i = 0; i < 3; i++)
 		{
@@ -88,7 +84,25 @@ int ChooseOption(char _str1[], char _str2[], char _str3[], char _question[]) {
 				break;
 			}
 		}
-		else if (select = ENTER_KEY) { return currentOption+1; } //if enter was pressed, return from this function and return the selected option +1, so the index gets translanted into more user friendly context
+		else if (select == ENTER_KEY) { //if enter was pressed, return from this function. Add +1 to current option to translate index to userfriendly output
+			if (currentOption + 1 == _riddle.truth) {
+				*_score += 10;
+				printf("Your Answer is correct.\n");
+			}
+			else printf(" Wrong Answer.\n");
+
+			return currentOption + 1;
+		}
 	}
+
+}
+
+void IterateThroughRiddles(Riddle _riddle[], int* _score) {
+	for (int i = 0; i < 3; i++)
+	{
+		AskRiddle(_riddle[i],_score);
+		_getch();
+	}
+
 }
 
