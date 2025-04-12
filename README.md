@@ -2,7 +2,6 @@
 
 Learning C is not related to my education in Games Programming at SAE Institute.  
 However, due to my enjoyment for coding and my desire to improve my flexibility for potential job applications I decided to get to know another language in my spare time.
-I decided to go with C because of its low level nature and relationship to C++, which is relevant for working on many relevant game engines like Unreal.
 
 ## Projects in this Depository
 This Depository contains the various projects I build to learn C, starting with simple console programs I plan to get into more and more complex projects in time.
